@@ -2,6 +2,8 @@
 
 **hodo** (pronounced "hoe-doo") allows you to run commands on the command line as Hodor.
 
+![Demo](https://raw.githubusercontent.com/pjdietz/hodo/master/demo.gif)
+
 Hodor doesn't talk much, so you won't see any of the output from stdout or stderr while the command is running.
 
 When the command finishes, **hodo** will output "Hodor." When a command exists with an error (status code != 0), **hodo** outputs "HODOR!" to stderr.
@@ -11,7 +13,7 @@ When the command finishes, **hodo** will output "Hodor." When a command exists w
 Install Hodo globally using npm:
 
 ```bash
-npm install -g hodo
+npm install hodo -g
 ```
 
 ## Using
