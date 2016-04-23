@@ -11,12 +11,10 @@ commander
     .usage('[options] <cmd...>');
 commander.parse(process.argv);
 
-const args = process.argv.slice(2);
-if (args.length < 2) {
+let args = process.argv.slice(2);
+if (!args.length) {
     commander.help();
 }
-
-console.log(args);
 
 let proc = child_process.spawn(args[0], args.slice(1));
 proc.on('close', (code) => {
