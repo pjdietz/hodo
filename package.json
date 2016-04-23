@@ -21,5 +21,8 @@
     "url": "https://github.com/pjdietz/hodo"
   },
   "author": "PJ Dietz",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
 }
