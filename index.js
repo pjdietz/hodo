@@ -32,5 +32,11 @@ child.on('close', (code) => {
     } else {
         console.log('Hodor.');
     }
+    process.exit(code);
+});
+child.on('error', () => {
+    spinner.stop();
+    console.error('HODOR!');
+    process.exit(1);
 });
 
