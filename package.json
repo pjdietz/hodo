@@ -13,8 +13,8 @@
   "keywords": [
     "hodor",
     "cli",
-    "command",
-    "line"
+    "console",
+    "terminal"
   ],
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   "author": "PJ Dietz",
   "license": "MIT",
   "dependencies": {
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "ora": "^0.2.1"
   }
 }

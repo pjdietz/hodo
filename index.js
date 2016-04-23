@@ -4,6 +4,8 @@
 
 const child_process = require('child_process');
 const commander = require('commander');
+const ora = require('ora');
+const spinners = require('cli-spinners');
 const version = require('./package').version;
 
 commander
@@ -16,8 +18,15 @@ if (!args.length) {
     commander.help();
 }
 
-let proc = child_process.spawn(args[0], args.slice(1));
-proc.on('close', (code) => {
+let spinner = ora({
+    color: 'gray',
+    spinner: 'simpleDotsScrolling'}
+);
+spinner.start();
+
+let child = child_process.spawn(args[0], args.slice(1));
+child.on('close', (code) => {
+    spinner.stop();
     if (code !== 0) {
         console.error('HODOR!');
     } else {
