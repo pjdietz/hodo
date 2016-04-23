@@ -1,0 +1,17 @@
+{
+  "name": "hodo",
+  "version": "1.0.0",
+  "description": "Run commands as Hodor.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hodor",
+    "cli",
+    "command",
+    "line"
+  ],
+  "author": "PJ Dietz",
+  "license": "MIT"
+}
