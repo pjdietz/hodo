@@ -1,6 +1,6 @@
 {
   "name": "hodo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Run commands as Hodor.",
   "main": "index.js",
   "preferGlobal": true,
