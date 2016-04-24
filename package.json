@@ -23,7 +23,6 @@
   "author": "PJ Dietz",
   "license": "MIT",
   "dependencies": {
-    "commander": "^2.9.0",
     "ora": "^0.2.1"
   }
 }
